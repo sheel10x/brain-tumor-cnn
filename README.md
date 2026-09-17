@@ -144,6 +144,67 @@ All pre-installed in Google Colab. ✅
 
 ---
 
+## 📊 Results
+
+> Trained on **Tesla T4 GPU** for **40 epochs** | Dataset: 5,040 train / 560 val / 1,600 test images
+
+### 🏆 Final Metrics
+
+| Metric | Score |
+|--------|-------|
+| **Test Accuracy** | **93.75%** |
+| **Test F1-Score (Macro)** | **93.58%** |
+| **Best Val Accuracy** | **98.21%** (Epoch 36) |
+| **Final Train Accuracy** | **99.48%** |
+
+---
+
+### 📋 Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| Glioma | 0.9815 | 0.7975 | 0.8800 | 400 |
+| Meningioma | 0.8986 | 0.9525 | 0.9248 | 400 |
+| No Tumor | 0.9195 | 1.0000 | 0.9581 | 400 |
+| Pituitary | 0.9615 | 1.0000 | 0.9804 | 400 |
+| **Macro Avg** | **0.9403** | **0.9375** | **0.9358** | **1600** |
+
+---
+
+### 📈 Training History (selected epochs)
+
+| Epoch | Train Loss | Train Acc | Val Loss | Val Acc |
+|-------|-----------|-----------|----------|---------|
+| 01 | 0.7927 | 67.84% | 0.5838 | 74.46% |
+| 05 | 0.3329 | 86.88% | 0.3030 | 87.68% |
+| 10 | 0.1836 | 93.13% | 0.2325 | 92.14% |
+| 15 | 0.1225 | 95.58% | 0.2119 | 91.96% |
+| 20 | 0.0740 | 97.26% | 0.1409 | 94.64% |
+| 25 | 0.0609 | 97.88% | 0.1149 | 95.18% |
+| 30 | 0.0281 | 99.07% | 0.0593 | 98.04% |
+| 35 | 0.0190 | 99.40% | 0.0713 | 97.68% |
+| **36** | **0.0160** | **99.48%** | **0.0590** | **98.21% ⭐** |
+| 40 | 0.0151 | 99.48% | 0.0750 | 97.50% |
+
+> ⭐ Best model checkpoint saved at **Epoch 36** (Val Acc: 98.21%)
+
+---
+
+### 🖼️ Outputs
+
+All plots and full training logs are available in the Jupyter notebook:
+👉 **[`brain_tumor_custom_cnn.ipynb`](brain_tumor_custom_cnn.ipynb)**
+
+| Plot | Description |
+|------|-------------|
+| Training Curves | Loss & accuracy over 40 epochs |
+| Confusion Matrix | Count & normalised heatmaps |
+| Per-Class Accuracy | Bar chart per class |
+| Sample Predictions | 4×4 grid (green = correct, red = wrong) |
+| Class Distribution | Train vs test set class balance |
+
+---
+
 ## 📄 License
 
 MIT License — feel free to use, modify, and distribute.
