@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model weights & checkpoints
+*.pth
+*.pt
+*.ckpt
+*.pkl
+
+# Dataset & images (large files — download from Kaggle)
+*.zip
+*.tar
+*.tar.gz
+archive/
+brain_tumor_dataset/
+
+# Generated output images
+sample_images.png
+class_distribution.png
+training_curves.png
+confusion_matrix.png
+per_class_accuracy.png
+sample_predictions.png
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
